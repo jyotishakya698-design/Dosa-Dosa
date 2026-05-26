@@ -1,0 +1,9 @@
+
+@import "../base/mixins";
+@include font-face("Montserrat", "Montserrat-Regular", 400);
+@include font-face("Montserrat", "Montserrat-Italic", 400, italic);
+@include font-face("Montserrat", "Montserrat-Medium", 500);
+@include font-face("Montserrat", "Montserrat-SemiBold", 600);
+@include font-face("Raleway", "Raleway-Medium", 500);
+@include font-face("Raleway", "Raleway-SemiBold", 600);
+@include font-face("Raleway", "Raleway-Bold", 700);

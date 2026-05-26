@@ -1,0 +1,35 @@
+
+// page 404 main content
+
+.error {
+    min-height: 100vh;
+    text-align: center;
+    background: url("../img/placeholder.jpg") center no-repeat / cover;
+
+    .section_header {
+        * {
+            color: $light !important;
+        }
+
+        &-text {
+            max-width: 650px;
+            font-weight: 500;
+            margin: 0 auto;
+        }
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
+
+// media queries
+
+// --- mobile landscape
+@media screen and (min-width: 567.98px) {
+    .error {
+        .wrapper {
+            width: fit-content;
+        }
+    }
+}

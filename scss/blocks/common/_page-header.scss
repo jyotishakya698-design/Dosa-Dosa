@@ -1,0 +1,54 @@
+
+// page header component
+
+.page {
+    &_cover,
+    &_breadcrumbs {
+        text-align: center;
+    }
+
+    &_cover {
+        padding: 0 20px;
+        height: 270px;
+
+        &-title {
+            margin-top: 70px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+
+    &_breadcrumbs {
+        background: $primary;
+        padding: 20px;
+
+        &-list {
+            text-transform: capitalize;
+            li {
+                position: relative;
+                .link {
+                    color: $accentColor;
+                }
+                &:not(:last-of-type) {
+                    &:after {
+                        content: '/';
+                        padding-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 1023.98px) {
+    .page {
+        &_cover {
+            height: 450px;
+            &-title {
+                margin-top: 130px;
+            }
+        }
+    }
+}

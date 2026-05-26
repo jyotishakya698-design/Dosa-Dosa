@@ -1,0 +1,33 @@
+
+// brands section
+
+.brands {
+    &_list {
+        &-item {
+            height: 60px;
+
+            img {
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// media queries
+
+// --- tablet
+@media screen and (min-width: 767.98px) {
+    .brands {
+        .section_header-title {
+            max-width: 700px;
+        }
+
+        &_list {
+            &-item {
+                height: 80px;
+            }
+        }
+    }
+}

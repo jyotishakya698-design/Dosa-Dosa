@@ -1,0 +1,64 @@
+
+// reply section
+
+.post {
+    &_reply {
+        margin-bottom: 50px;
+
+        &-title {
+            margin-bottom: 18px;
+        }
+
+        &-form {
+            &_fieldset {
+                gap: 15px;
+                margin-bottom: 30px;
+            }
+
+            textarea {
+                min-height: 200px;
+                padding: 20px;
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+// media queries
+
+// --- tablet
+@media screen and (min-width: 767.98px) {
+    .post {
+        &_reply {
+            margin-bottom: 70px;
+
+            &-title {
+                margin-bottom: 20px;
+            }
+
+            &-form {
+                &_fieldset {
+                    gap: 25px;
+                    margin-bottom: 60px;
+                }
+
+                .btn {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+// --- tablet landscape
+@media screen and (min-width: 1023.98px) {
+    .post {
+        &_reply {
+            margin-bottom: 90px;
+        }
+    }
+}

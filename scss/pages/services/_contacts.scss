@@ -1,0 +1,49 @@
+
+// contacts section
+
+.contacts {
+    background: url("../img/placeholder.jpg") right center no-repeat / cover;
+
+    &_main {
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+// media queries
+
+// --- mobile landscape
+@media screen and (min-width: 567.98px) {
+    .contacts {
+        &_main {
+            .btn {
+                width: fit-content;
+            }
+        }
+    }
+}
+
+// --- tablet
+@media screen and (min-width: 767.98px) {
+    .contacts {
+        &_main {
+            max-width: 570px;
+
+            .section_header-title {
+                max-width: 470px;
+            }
+        }
+    }
+}
+
+// --- tablet landscape
+@media screen and (min-width: 1023.98px) {
+    .contacts {
+        background-position: center center;
+
+        &_main {
+            margin-left: auto;
+        }
+    }
+}
